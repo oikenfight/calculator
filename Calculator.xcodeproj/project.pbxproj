@@ -12,6 +12,7 @@
 		3E1EB5121BB27146002C65A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1EB5101BB27146002C65A6 /* Main.storyboard */; };
 		3E1EB5141BB27146002C65A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E1EB5131BB27146002C65A6 /* Assets.xcassets */; };
 		3E1EB5171BB27146002C65A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E1EB5151BB27146002C65A6 /* LaunchScreen.storyboard */; };
+		F329B1BF1C3BF327003D4281 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329B1BE1C3BF327003D4281 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3E1EB5131BB27146002C65A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E1EB5161BB27146002C65A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E1EB5181BB27146002C65A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F329B1BE1C3BF327003D4281 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3E1EB50C1BB27146002C65A6 /* AppDelegate.swift */,
 				3E1EB50E1BB27146002C65A6 /* ViewController.swift */,
 				3E1EB5101BB27146002C65A6 /* Main.storyboard */,
+				F329B1BE1C3BF327003D4281 /* HistoryViewController.swift */,
 				3E1EB5131BB27146002C65A6 /* Assets.xcassets */,
 				3E1EB5151BB27146002C65A6 /* LaunchScreen.storyboard */,
 				3E1EB5181BB27146002C65A6 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F329B1BF1C3BF327003D4281 /* HistoryViewController.swift in Sources */,
 				3E1EB50F1BB27146002C65A6 /* ViewController.swift in Sources */,
 				3E1EB50D1BB27146002C65A6 /* AppDelegate.swift in Sources */,
 			);
