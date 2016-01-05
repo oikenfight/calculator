@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3E1EB5081BB27146002C65A6"
-               BuildableName = "Chapter5.app"
-               BlueprintName = "Chapter5"
-               ReferencedContainer = "container:Chapter5.xcodeproj">
+               BuildableName = "Calculator.app"
+               BlueprintName = "Calculator"
+               ReferencedContainer = "container:Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1EB5081BB27146002C65A6"
-            BuildableName = "Chapter5.app"
-            BlueprintName = "Chapter5"
-            ReferencedContainer = "container:Chapter5.xcodeproj">
+            BuildableName = "Calculator.app"
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1EB5081BB27146002C65A6"
-            BuildableName = "Chapter5.app"
-            BlueprintName = "Chapter5"
-            ReferencedContainer = "container:Chapter5.xcodeproj">
+            BuildableName = "Calculator.app"
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3E1EB5081BB27146002C65A6"
-            BuildableName = "Chapter5.app"
-            BlueprintName = "Chapter5"
-            ReferencedContainer = "container:Chapter5.xcodeproj">
+            BuildableName = "Calculator.app"
+            BlueprintName = "Calculator"
+            ReferencedContainer = "container:Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
