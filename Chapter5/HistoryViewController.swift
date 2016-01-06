@@ -10,8 +10,16 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    
+    var calcHistory: Array<Double> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for result: Double in calcHistory {
+            textView.text = textView.text + ("\(result)")
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -21,9 +29,10 @@ class HistoryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func back(sender: AnyObject) {
+    @IBAction func back(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
     /*
     // MARK: - Navigation

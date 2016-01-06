@@ -121,6 +121,12 @@ class ViewController: UIViewController {
         defaults.synchronize()
     }
     
+    // segue で画面遷移する時に呼ばれる
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let historyViewController: HistoryViewController = segue.destinationViewController as! HistoryViewController
+        historyViewController.calcHistory = calcHistory
+    }
+    
 
 }
 
