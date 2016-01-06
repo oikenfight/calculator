@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         }
     }
     
+    let calcHistoryKey: String = "calcHistoryUserdefaultKey"
+    
     
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -92,6 +94,8 @@ class ViewController: UIViewController {
         
         selectedOperand = ""
         targetNum = resultValue
+        
+        saveHistory(resultValue)
     }
 
     @IBAction func crearAll(sender: UIButton) {
@@ -99,6 +103,38 @@ class ViewController: UIViewController {
         selectedOperand = ""
         resultValue = 0
     }
+    
+    // 計算結果の履歴保存用の配列
+    lazy var calcHistory: Array<Double> = []
+    
+    // UserDefaultsに計算結果を保存する
+    func saveHistory(result: Double){
+        // NSUserDefaultsのインスタンスを生成
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        
+        // 変数calcHistoryKeyというキーで配列namesを保存
+        calcHistory.append(result)
+        defaults.setObject(calcHistory, forKey: calcHistoryKey)
+        
+        // シンクロを入れないとうまく動作しないときがあります
+        defaults.synchronize()
+    }
+    
+    // segue で画面遷移する時に呼ばれる
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let historyViewController: HistoryViewController = segue.destinationViewController as! HistoryViewController
+        historyViewController.calcHistory = calcHistory
+    }
+    
 
 }
+
+
+
+
+
+
+
+
 

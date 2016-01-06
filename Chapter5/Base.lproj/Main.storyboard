@@ -217,6 +217,9 @@ CCs
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="M"/>
+                                <connections>
+                                    <segue destination="H1Y-s9-xrp" kind="presentation" id="v6P-h7-Pdi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWk-94-MF3">
                                 <rect key="frame" x="244" y="426" width="112" height="112"/>
@@ -323,6 +326,38 @@ CCs
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="313" y="387"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="gV8-Qe-DLX">
+            <objects>
+                <viewController id="H1Y-s9-xrp" customClass="HistoryViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9tn-Fi-e7v"/>
+                        <viewControllerLayoutGuide type="bottom" id="B1z-KH-bys"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlU-PB-MY8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd5-2d-258">
+                                <rect key="frame" x="270" y="40" width="60" height="10"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="H1Y-s9-xrp" eventType="touchUpInside" id="1se-hQ-rzq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-dV-41Y">
+                                <rect key="frame" x="252" y="107" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwA-rd-8Va" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="387"/>
         </scene>
     </scenes>
 </document>
